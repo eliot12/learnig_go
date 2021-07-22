@@ -7,6 +7,9 @@ func main()  {
 	El nombre se debe almacenar en una variable llamada nombre. A continuación
 	se debe mostrar en pantalla el texto “Ahora estás en la matrix, [usuario]”,
 	donde “[usuario]” se reemplazará por el nombre que el usuario haya ingresado.*/
+
+	/*Tu nombre: Patricia
+	Ahora estás en la matrix, Patricia */
 	var name string
 	fmt.Println("Introduce tú nombre")
 	fmt.Scanf("%v\n",&name)
