@@ -14,14 +14,16 @@ package main
 
 import (
 	"fmt"
-
 )
 
 func main()  {
 	var texto  string
-	var count int
+	texto = "Hola mundo cruel"
+	cont := 0
 	fmt.Println("Ingresá el texto:")
-	fmt.Scanf("%v\n",&texto)
-	count = len(texto)
-	fmt.Println(count)
+	//fmt.Scanf("%v\n",&texto)
+	for range(texto){
+		cont++
+	}
+
 }
