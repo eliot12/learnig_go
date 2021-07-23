@@ -5,7 +5,7 @@ tiene el texto que ingresó (por ejemplo, si escribió la palabra “HOLA”, te
 entre 0 y 4) y almacenar este número en una variable llamada indice.
 Mostrar en pantalla el carácter del texto ubicado en la posición dada por indice.
 */
-/*Ingresá un texto: En un lugar de La Mancha, de cuyo nombre no quiero acordarme…
+/*Ingresá un texto: En un lugar de La Mancha, de cuyo nombre no quiero acordarme.
 El carácter en primer lugar es: E
 Ingresá un número positivo menor a 63
 7
@@ -13,17 +13,23 @@ El carácter en esa posición es: u*/
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"os"
 )
 
 func main()  {
-	var texto  string
-	texto = "Hola mundo cruel"
-	cont := 0
-	fmt.Println("Ingresá el texto:")
-	//fmt.Scanf("%v\n",&texto)
-	for range(texto){
-		cont++
+	var aux, count int
+	reader := bufio.NewReader(os.Stdin)
+	fmt.Println("Ingrese el texto")
+	texto,err := reader.ReadString('\n')
+	if err != nil {
+		fmt.Println(err)
+	}else{
+		for range texto{
+			aux = count
+			count++
+		}
+	fmt.Println(aux)
 	}
-
 }
